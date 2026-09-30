@@ -1,0 +1,16 @@
+# Generated files
+.build/
+dist/
+.DS_Store
+.swiftpm/
+# Local secrets and signing material
+.env
+.env.*
+signing/
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+# Personal recordings and calibration exports
+personal-data/
