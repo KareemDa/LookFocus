@@ -10,7 +10,7 @@ final class AppModel: ObservableObject {
     @Published private(set) var workPolicy = WorkSetupPolicy()
     @Published private(set) var workMonitorName = "Work monitor"
     @Published private(set) var awayFromWork = false
-    @Published var batterySaver = false {
+    @Published var batterySaver = true {
         didSet {
             UserDefaults.standard.set(batterySaver, forKey: "batterySaver")
             tracker.setBatterySaver(batterySaver)
@@ -79,7 +79,7 @@ final class AppModel: ObservableObject {
         workMonitorName = defaults.string(forKey: "workMonitorName") ?? "Work monitor"
         cameraID = defaults.string(forKey: "cameraID") ?? CameraTracker.devices.first?.uniqueID ?? ""
         dwell = defaults.object(forKey: "dwell") as? Double ?? 0.15
-        batterySaver = defaults.bool(forKey: "batterySaver")
+        batterySaver = defaults.object(forKey: "batterySaver") as? Bool ?? true
         showDebugIndicator = defaults.bool(forKey: "showDebugIndicator")
         movePointer = defaults.bool(forKey: "movePointer")
         tracker.setBatterySaver(batterySaver)

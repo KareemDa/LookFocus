@@ -14,8 +14,18 @@ I built this to reduce the repeated “look at the other screen, move the mouse,
 - Keyboard and mouse activity holds to reduce unwanted switches.
 - Optional screen indicator: clear/uncertain matching and the current hold reason.
 - Work setup only: keep the camera off when your selected external monitor is absent.
-- Optional battery saver: lower processing rates and camera off after two idle minutes; keyboard/mouse activity resumes it.
+- Battery saver enabled by default: lower processing rates and camera off after two idle minutes; keyboard/mouse activity resumes it.
 - Pause shortcut, Dock/Command–Tab presence, optional login launch, and camera suspension on lock/sleep.
+
+## Screenshots
+
+Real app captures, with the camera paused because the saved work monitor is disconnected.
+
+<img src="docs/images/setup.png" alt="LookFocus permissions and posture calibration settings" width="480">
+
+<img src="docs/images/preferences.png" alt="LookFocus work setup and battery saver settings" width="480">
+
+The [launch poster](docs/images/lookfocus-poster.png) is an AI-generated illustration, not a screenshot of tracking behavior. Its [generation prompt](docs/images/poster-prompt.txt) is included.
 
 ## Requirements
 
@@ -45,7 +55,7 @@ See [local signing](docs/local-signing.md) for the personal-build signing requir
 4. Use the eye menu or Control–Option–Command–P to pause/resume. Every launch starts paused.
 5. Enable the live indicator under Tracking details when investigating missed switches. Leave it off for normal use.
 6. Optionally enable Work setup only while your work monitor is connected. Reconnecting resumes previously running tracking; manual pause cancels that intent.
-7. Enable Battery saver for lower processing rates and idle camera suspension. Disable it for faster detection or uninterrupted reading sessions.
+7. Battery saver starts enabled for new users, with lower processing rates and idle camera suspension. Disable it for faster detection or uninterrupted reading sessions.
 
 ## Privacy
 

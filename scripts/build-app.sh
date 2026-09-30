@@ -19,8 +19,8 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 <key>CFBundleDisplayName</key><string>LookFocus</string>
 <key>CFBundleIconFile</key><string>LookFocus</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>0.5.0</string>
-<key>CFBundleVersion</key><string>10</string>
+<key>CFBundleShortVersionString</key><string>0.5.1</string>
+<key>CFBundleVersion</key><string>11</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>
 <key>LSUIElement</key><false/>
 <key>NSCameraUsageDescription</key><string>LookFocus uses your camera to estimate head direction and focus a calibrated screen or window. Frames stay in memory on this Mac and are never recorded or uploaded.</string>
